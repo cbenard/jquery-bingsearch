@@ -107,6 +107,7 @@ function doSearch() {
 				$('#appKey').addClass('disabled');
 			}
 
+			// Scroll code courtesy of http://stackoverflow.com/a/2906009
 			var container = $('html, body');
 			var scrollTo = $("div.search-results").first();
 			var funcScroll = function() { container.scrollTop(scrollTo.offset().top - container.offset().top + container.scrollTop()); }
