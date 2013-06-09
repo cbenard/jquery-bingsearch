@@ -28,8 +28,13 @@
 	clear: both;
 }
 
-input[type="text"], input[type="search"] {
-	width: 90%;
+.search-row label {
+	display: block;
+}
+
+.search-row input[type="text"], .search-row input[type="search"] {
+	width: 100%;
+	display: block;
 }
 
 section.demonstration label {
