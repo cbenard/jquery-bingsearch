@@ -98,7 +98,8 @@ button. If you are on page 1, don't show a previous button.
 Example
 -------
 
-An example will be here hosted on github pages when I'm done.
+A live example is hosted on the [project page](http://cbenard.github.io/jquery-bingsearch/).
+You just need to provide your app key and a query.
 
 Pull Requests
 -------------
