@@ -12,6 +12,8 @@ is more than enough for my site search.
 This jQuery plugin lets you do Bing Web Searches in a very easy fashion in
 jQuery style.
 
+More information about the Bing Search API is available [from Microsoft](http://www.bing.com/developers/s/APIBasics.html).
+
 [1]: <http://datamarket.azure.com/dataset/bing/search>
 
 [5]: <http://stackoverflow.com/questions/6405942/google-search-api-site-limit>
@@ -36,11 +38,17 @@ Get an app key by following step 1 on [this page][8].
 
 ### HTML
 
-`<script type="text/javascript" src="js/jquery.bingsearch-min.js"></script>`
+```html
+<script type="text/javascript" src="js/jquery.bingsearch-min.js"></script>
+```
 
 ### Javascript
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Note:** At least one of `beforeSearchResults`, `afterSearchResults`, or `searchResultInterator`
+must be passed in, or the plugin will do nothing (since there's nothing to which it can return
+the results. This is in addition to the required fields listed below.
+
+```js
 $.bingSearch({
 	// Required (unless you use urlBase) by Bing Search API
 	appKey: 'Put your Windows Azure Marketplace Bing Search API Primary Account Key here'
@@ -76,7 +84,7 @@ $.bingSearch({
 		// data contains an error message
 	}
 });
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 Limitations
 -----------
@@ -112,9 +120,7 @@ Copyright (c) 2013 [Chris Benard][3]
 
 [3]: <http://chrisbenard.net>
 
-[http://github.com/cbenard/jquery-bingsearch][4]
-
-[4]: 
+Original work: http://github.com/cbenard/jquery-bingsearch
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
