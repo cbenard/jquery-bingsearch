@@ -109,7 +109,7 @@ fork it, add anything you'd like (in the scope of the library) and issue a pull
 request. As long as it's in the same style and it passes JSHint with the options
 in the plugin's JSHint comment, I will probably accept it.
 
-License
+<a id="license"></a>License
 -------
 
 [The MIT License (MIT)][2]

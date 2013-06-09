@@ -24,6 +24,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
 */
+/*! jQuery-bingsearch | (c) 2013 Chris Benard | http://github.com/cbenard/jquery-bingsearch#license */
 /*jshint laxbreak: true, forin:true, noarg:true, noempty:true, eqeqeq:true, bitwise:true, strict:true, undef:true, unused:true, curly:true, browser:true, jquery:true, indent:4, maxerr:50, devel:true, nomen:false, onevar:false, white:false */
 (function($) {
     "use strict";
