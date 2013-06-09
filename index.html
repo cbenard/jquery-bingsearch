@@ -1,1 +1,153 @@
-Test page
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Bing Search API Plugin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/search.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="span2"></div>
+                <div class="span8">
+                    <section class="introduction">
+                        <h1>jQuery Bing Search API Plugin</h1>
+                        <h2>By <a href="http://chrisbenard.net">Chris Benard</a></h2>
+                        <h3>Information</h3>
+
+                        <p>
+                            This is an example page for jQuery-bingsearch, a jQuery plugin which
+                            allows you to search the <a href="http://datamarket.azure.com/dataset/bing/search">
+                            Windows Azure Marketplace Bing Search API</a>.
+                        </p>
+
+                        <p>
+                            The plugin was created by <a href="http://chrisbenard.net">Chris Benard</a> and is
+                            available under the MIT license <a href="http://github.com/cbenard/jquery-bingsearch">
+                            on GitHub</a>.
+                        </p>
+                    </section>
+
+                    <section class="links">
+                        <h3>Source</h3>
+
+                        <p>
+                            You can obviously look at the page source (which is using the minified version),
+                            but here are some helpful links.
+                        </p>
+
+                        <p>
+                            <h4>View Formatted Source links</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/cbenard/jquery-bingsearch/blob/gh-pages/index.html">
+                                        This page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/cbenard/jquery-bingsearch/blob/gh-pages/js/search.js">
+                                        This page's javascript
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/cbenard/jquery-bingsearch/blob/master/jquery.bingsearch.js">
+                                        jquery.bingsearch.js (uncompressed)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/cbenard/jquery-bingsearch/blob/master/jquery.bingsearch-min.js">
+                                        jquery.bingsearch-min.js (compressed, minified)
+                                    </a>
+                                </li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h4>Downloadable links</h4>
+                            <ul>
+                                <li>
+                                    <a href="http://raw.github.com/cbenard/jquery-bingsearch/gh-pages/index.html">
+                                        This page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://raw.github.com/cbenard/jquery-bingsearch/gh-pages/js/search.js">
+                                        This page's javascript
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://raw.github.com/cbenard/jquery-bingsearch/master/jquery.bingsearch.js">
+                                        jquery.bingsearch.js (uncompressed)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://raw.github.com/cbenard/jquery-bingsearch/master/jquery.bingsearch-min.js">
+                                        jquery.bingsearch-min.js (compressed, minified)
+                                    </a>
+                                </li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section class="demonstration">
+                        <h3>Demonstration</h3>
+                        <form id="siteSearchForm">
+                            <div class="search-row">
+                                <label class="pull-left" for="appKey">App Key</label>
+                                <input type="text" id="appKey" class="pull-left" />
+                            </div>
+                            <div class="search-row">
+                                <p>
+                                    The app key is required and must be obtained from Microsoft by
+                                    following the directions in step 1 on <a tabindex="-1" href="http://blog.jongallant.com/2012/07/bing-search-api-azure-csharp.html">
+                                    this helpful page</a>.
+                                </p>
+                            </div>
+                            <div class="search-row">
+                                <label class="pull-left" for="searchBox">Query</label>
+                                <input class="pull-left" type="search" id="searchBox" />
+                                <input type="submit" value="Search" class="btn btn-success pull-left" />
+                                <input type="hidden" value="1" id="pageNumber" />
+                                <input type="hidden" value="" id="lastSearch" />
+                            </div>
+                        </form>
+
+                        <div class="search-results hidden">
+                            <h3>Search Results</h3>
+                            <div class="search-results-repeater">
+                                <div class="search-result template">
+                                    <div class="search-result-row">
+                                        <div class="search-result-title"><h4><a></a></h4></div>
+                                        <div class="search-result-description"></div>
+                                        <div class="search-result-displayurl"><a></a></div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-results-footer">
+                                <div class="end">End of Results</div>
+
+                                <div class="pagination pagination-centered">
+                                    <ul>
+                                        <li class="previous"><a href="#">&laquo; Previous</a></li>
+                                        <li class="next"><a href="#">Next&raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-results-template-container hidden">
+                    </section>
+                </div>
+                <div class="span2"></div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.base64.js"></script>
+        <script src="js/jquery.bingsearch-min.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>
