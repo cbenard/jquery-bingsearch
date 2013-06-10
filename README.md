@@ -18,6 +18,12 @@ More information about the Bing Search API is available [from Microsoft](http://
 
 [5]: <http://stackoverflow.com/questions/6405942/google-search-api-site-limit>
 
+Example
+-------
+
+A live example is hosted on the [project page](http://cbenard.github.io/jquery-bingsearch/).
+You just need to provide your app key and a query.
+
 Requirements
 ------------
 
@@ -95,12 +101,6 @@ a pagination interface is impossible unless you just want forward and backward.
 If you want this, just keep track of the page numbers, and check if
 `data.hasMore` in the before/after events. If true, then you can show a next
 button. If you are on page 1, don't show a previous button.
-
-Example
--------
-
-A live example is hosted on the [project page](http://cbenard.github.io/jquery-bingsearch/).
-You just need to provide your app key and a query.
 
 Pull Requests
 -------------
