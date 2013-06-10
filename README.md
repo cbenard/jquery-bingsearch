@@ -50,6 +50,8 @@ the results. This is in addition to the required fields listed below.
 
 ```js
 $.bingSearch({
+	// Required: query text
+	query: 'query text here',
 	// Required (unless you use urlBase) by Bing Search API
 	appKey: 'Put your Windows Azure Marketplace Bing Search API Primary Account Key here'
 	// Optional (defaults to the Bing Search API Web Results Query).
@@ -62,9 +64,8 @@ $.bingSearch({
 	pageNumber: parseInt($('#pageNumber').val()),
 	// Optional (defaults to 10): Page Size
 	pageSize: 10,
-	limitToSite: 'chrisbenard.net',
-	query: 'query text here',
-	limitToSite: 'example.org'
+	// Optional (defaults to null): Limit to site. Shortcut to adding "site:example.org " to query
+	limitToSite: 'example.org',
 	// Optional (defaults to false): Print console logging information about search results
 	debug: false,
 	// Optional: Function is called after search results are retrieved, but before the interator is called
