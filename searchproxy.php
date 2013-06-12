@@ -60,7 +60,7 @@ $responses = parse_http_response_header($http_response_header);
 
 $code = $responses[0]['status']['code']; // last status code
 
-header($responses['status']['line']);
+header($responses[0]['status']['line']);
 
 foreach ($responses[0]['fields'] as $header)
 {
